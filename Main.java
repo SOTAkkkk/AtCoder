@@ -5,11 +5,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
 
-        if(N<42){
-            System.out.println("AGC0"+N);
-        }
-        else{
-            System.out.println("AGC0"+(N+1));
+        if (N < 10) {
+            System.out.println("AGC00" + N);
+        } else if (N < 42) {
+            System.out.println("AGC0" + N);
+        } else {
+            System.out.println("AGC0" + (N + 1));
         }
     }
 }

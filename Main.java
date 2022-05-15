@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        scanner.nextLine();
-        String S = scanner.nextLine();
-        if (S.charAt(N - 1) == 'o') {
+        String S = scanner.next();
+        String T = scanner.next();
+
+        if(S.compareTo(T)<0){
             System.out.println("Yes");
-        } else {
+        }
+        else{
             System.out.println("No");
         }
 
